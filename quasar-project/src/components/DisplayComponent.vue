@@ -33,12 +33,12 @@
     },
     methods: {
       editRow(row) {
-        this.$emit('edit-row', row);
+        this.$emit('edit-row', row)
       },
       deleteRow(row) {
-        this.$emit('delete-row', row);
+        this.$emit('delete-row', row)
       }
     },
-  };
+  }
   </script>
   
