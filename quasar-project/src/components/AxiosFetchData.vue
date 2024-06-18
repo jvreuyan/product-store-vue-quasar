@@ -1,12 +1,12 @@
 <template>
-    <q-card class="q-pa-md">
-      <q-card-section>
+    <!-- <q-card class="q-pa-md"> -->
+      <!-- <q-card-section>
         <div class="text-h6">Axios Component</div>
       </q-card-section>
       <q-card-actions align="right">
         <q-btn label="Fetch" color="primary" @click="fetchData" />
-      </q-card-actions>
-    </q-card>
+      </q-card-actions> -->
+    <!-- </q-card> -->
   </template>
   
   <script lang="ts">
@@ -14,6 +14,9 @@
   const url = 'https://dummyjson.com/products'
   export default {
     name: 'AxiosComponent',
+    mounted() {
+      this.fetchData()
+    },
     methods: {
       fetchData() {
         axios.get(url)
